@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reynem — Backend & Android</title>
+  <style>
+    :root {
+      --bg-color: #121212;
+      --text-color: #e0e0e0;
+      --accent-color: #4a90e2;
+      --card-bg: #1e1e1e;
+      --border-color: #333;
+      --hover-bg: #262626;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    header img {
+      width: 96px;
+      height: 96px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid var(--border-color);
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    header p.subtitle {
+      color: #aaa;
+      font-size: 1rem;
+    }
+
+    header .bio {
+      color: #777;
+      max-width: 500px;
+      margin: 1rem auto;
+      font-size: 0.95rem;
+    }
+
+    .contacts {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .contacts a {
+      color: #ccc;
+      transition: color 0.2s ease;
+    }
+
+    .contacts a:hover {
+      color: white;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    h2 {
+      font-size: 1.25rem;
+      margin-bottom: 1rem;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .skill-tag {
+      background: var(--card-bg);
+      padding: 0.4rem 0.8rem;
+      border-radius: 999px;
+      font-size: 0.85rem;
+    }
+
+    .projects {
+      display: grid;
+      gap: 1.5rem;
+    }
+
+    .project-card {
+      background: var(--card-bg);
+      padding: 1rem;
+      border-radius: 8px;
+      transition: background 0.2s ease;
+    }
+
+    .project-card:hover {
+      background: var(--hover-bg);
+    }
+
+    .project-card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .project-card p {
+      font-size: 0.9rem;
+      color: #aaa;
+      margin: 0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #555;
+      font-size: 0.85rem;
+      padding-bottom: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://github.com/Reynem.png" alt="Reynem" />
+      <h1>Reynem</h1>
+      <p class="subtitle">Backend разработчик | Android разработка</p>
+      <p class="bio">
+        Разрабатываю backend-приложения, мобильные приложения под Android,
+        экспериментирую различными инструментами.
+      </p>
+
+      <div class="contacts">
+        <a href="https://github.com/Reynem " target="_blank">GitHub</a>
+        <a href="mailto:lexmeins2@protonmail.com">Email</a>
+        <a href="https://t.me/Lixmio " target="_blank">Telegram</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Навыки</h2>
+      <div class="skills">
+        <span class="skill-tag">Python</span>
+        <span class="skill-tag">Java</span>
+        <span class="skill-tag">FastAPI</span>
+        <span class="skill-tag">PostgreSQL</span>
+        <span class="skill-tag">MongoDB</span>
+        <span class="skill-tag">Git</span>
+        <span class="skill-tag">Android</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Избранные проекты</h2>
+      <div class="projects">
+        <!-- Проект 1 -->
+        <div class="project-card">
+          <h3>Delivery Service</h3>
+          <p>Система доставки товаров. Backend написан на FastAPI, используется MongoDB.</p>
+          <a href="https://github.com/Reynem/Delivering_service " target="_blank">Посмотреть на GitHub</a>
+        </div>
+
+        <!-- Проект 2 -->
+        <div class="project-card">
+          <h3>SuperAntiCheat</h3>
+          <p>Обнаружитель списывания на контрольных работах. Мобильное приложение работает на Android studio. Backend написан на FastAPI, используется PostgreSQL.</p>
+          <a href="https://github.com/Reynem/SuperAntiCheat" target="_blank">Посмотреть на GitHub</a>
+        </div>
+
+        <!-- Проект 3 -->
+        <div class="project-card">
+          <h3>TameMind</h3>
+          <p>Мобильное приложение по улучшению внимания, уменьшению времени за телефоном, написанный на Java.</p>
+          <a href="https://github.com/Reynem/TameMind" target="_blank">Посмотреть на GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      &copy; 2025 Reynem · Made with 🥓
+    </footer>
+  </div>
+</body>
+</html>
